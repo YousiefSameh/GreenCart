@@ -22,7 +22,7 @@ const useCart = () => {
 	const totalQuantity = useAppSelector(getCartTotalQuantitySelector);
 	const [cartArray, setCartArray] = useState<IProduct[]>([]);
 	const [showAddress, setShowAddress] = useState(false);
-	const [addresses, setAddresses] = useState([]);
+	const [addresses, setAddresses] = useState<AddAddressType[]>([]);
 	const [selectedAddress, setSelectedAddress] = useState<AddAddressType | null>(null);
 	const [paymentOption, setPaymentOption] = useState("COD");
 
