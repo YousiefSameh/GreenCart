@@ -57,8 +57,8 @@ export const placeOrderCOD = async (req, res) => {
 			message: "Order Placed Successfully",
 			orderId: newOrder._id,
 		});
-	} catch (error) {
-		console.error("Error in placeOrderCOD:", error);
+	} catch (err) {
+		console.error("Error in placeOrderCOD:", err);
 		res.status(500).json({ success: false, message: error.message });
 	}
 };
